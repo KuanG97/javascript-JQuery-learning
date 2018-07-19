@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>国际学院</title>
+    <meta name="robots" content="all" />
+    <meta name="author" content="author" />
+    <meta name="Copyright" content="Tencent" />
+    <link rel="stylesheet" href="public.css">
+</head>
+<body>
+<ul class="linkTree">
+    <li ><a href="#" data-num="0"><img src="linkTreeDir.png" alt=">">院系简介</a>
+        <ul>
+            <li><a href="#">地理位置</a></li>
+            <li><a href="#">联系方式</a></li>
+            <li><a href="#">人员领导</a></li>
+        </ul>
+    </li>
+    <li><a href="#" data-num="1"><img src="linkTreeDir.png" alt=">">现任领导</a>
+        <ul>
+            <li><a href="#">地理位置</a></li>
+            <li><a href="#">联系方式</a></li>
+            <li><a href="#">人员领导</a></li>
+        </ul>
+    </li>
+    <li><a href="#" data-num="2"><img src="linkTreeDir.png" alt=">">组织架构</a>
+        <ul>
+            <li><a href="#">地理位置</a></li>
+            <li><a href="#">联系方式</a></li>
+            <li><a href="#">人员领导</a></li>
+        </ul>
+    </li>
+</ul>
+
+    <script src="../jquery.min.js"></script>
+    <script>
+        $(function(){
+            var count = $(".linkTree").children('li').length;
+            var i=new Array(count);
+            for(var n=0;n<count;n++){
+                i[n]=1;
+            }
+            $(".linkTree>li>a").on("click",function(){
+                $(this).next().toggle(); 
+                var num = $(this).attr("data-num");
+                console.log(num);
+                if(i[num]==1){
+                    $(this).find("img").css("transform","rotate("+i[num]*0+"deg)"); 
+                    i[num]++;
+                }else{
+                    $(this).find("img").css("transform","rotate("+i[num]*(-45)+"deg)"); 
+                    i[num]=1;
+                }
+            });
+        })
+    </script>
+    
+</body>
+</html>

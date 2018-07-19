@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>国际学院</title>
+    <meta name="robots" content="all" />
+    <meta name="author" content="author" />
+    <meta name="Copyright" content="Tencent" />
+    <link rel="stylesheet" href="public.css">
+</head>
+<body>
+<ul class="linkTree">
+    <li ><a href="#" data-num="0">院系简介</a>
+        <ul>
+            <li><a href="#">地理位置</a>
+                    <ul>
+                    <li><a href="#">地理位置</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">人员领导</a></li>
+                </ul>
+            </li>
+            <li><a href="#">联系方式</a></li>
+            <li><a href="#">人员领导</a></li>
+        </ul>
+    </li>
+    <li><a href="#" data-num="1">现任领导</a>
+        <ul>
+            <li><a href="#">地理位置</a></li>
+            <li><a href="#">联系方式</a></li>
+            <li><a href="#">人员领导</a></li>
+        </ul>
+    </li>
+    <li><a href="#" data-num="2">组织架构</a>
+        <ul>
+            <li><a href="#">地理位置</a></li>
+            <li><a href="#">联系方式</a></li>
+            <li><a href="#">人员领导</a></li>
+        </ul>
+    </li>
+</ul>
+
+    <script src="../jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".linkTree a").on("click",function(){
+                $(this).next().toggle(); 
+            });
+
+        })
+    </script>
+    
+</body>
+</html>

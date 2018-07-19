@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		img{
+			width: 300px;
+			height: 220px;
+		}
+		li{
+			width: 100px;
+			text-align: center;
+			list-style: none;
+			float: left;
+		}
+	</style>
+	<script>
+		function showPic(whichPic){
+			var source = whichPic.getAttribute("href");//获取链接
+			var title = whichPic.getAttribute("title");
+			var obj = document.getElementById("showBox");
+			var showTitle = document.getElementById("showTitle");
+			obj.setAttribute("src",source);//将对应链接放到展示处
+			showTitle.textContent = title;
+		}	
+
+	</script>
+</head>
+<body>
+	<li><a href="img/1.jpg" title="img 1" onclick="showPic(this);return false;">img 1</a></li>
+	<li><a href="img/2.jpg" title="img 2" onclick="showPic(this);return false;">img 2</a></li>
+	<li><a href="img/3.jpg" title="img 3" onclick="showPic(this);return false;">img 3</a></li>
+	<br>
+	<div>
+		<img id="showBox" src="img/1.jpg" alt="img show">
+		<p>显示图片标题：<span id="showTitle"></span></p>
+	</div>
+</body>
+</html>
