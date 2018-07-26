@@ -18,7 +18,7 @@ a:active{
 	font-size: 18px;
 	line-height: 36px;
 }
-.linkTree>li ul{
+.linkTree>li>ul{
 	display: none;
 }
 .linkTree>li>ul>li{
@@ -26,9 +26,21 @@ a:active{
 	line-height: 28px;
 	text-indent: 38px;
 }
+.linkTree>li>ul>li>a:hover{
+	color: #56A3F1;
+}
 .linkTree img{
 	width: 13px;
 	height: auto;
 	transform: rotate(-90deg);
 	margin-right: 9px;
+}
+.linkTree .active{
+	color: #56A3F1;
+}
+.linkTree .open>ul{
+	display: block !important;
+}
+.linkTree .open img{
+	transform: rotate(0deg);
 }
