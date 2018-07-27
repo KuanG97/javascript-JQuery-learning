@@ -1,0 +1,10 @@
+		img{
+			width: 300px;
+			height: 220px;
+		}
+		li{
+			width: 100px;
+			text-align: center;
+			list-style: none;
+			float: left;
+		}
