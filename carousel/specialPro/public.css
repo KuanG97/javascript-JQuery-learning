@@ -1,0 +1,139 @@
+ul,li{
+	padding:0;
+	margin:0;
+}
+ul{
+	list-style: none;
+}
+input{
+	border:0;
+	outline:none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration:none;
+}
+
+/*轮播图*/
+.carouselBox{
+	width: 1140px;
+	height: 500px;
+	overflow: hidden;
+}
+#xx-carousel{
+	position: relative;
+	width: 6840px;
+}
+.itemBox{
+	float: left;
+	width: 1140px;
+	height: 500px;
+}
+.itemBox img{
+	width: 100%;
+	height: 100%;
+}
+.dot{
+	width: 940px;
+	height: 125px;
+	position: absolute;
+	bottom: -40px;
+	left: 120px;
+}
+.dotImgBox{
+	width: 100%;
+	height: 85px;
+	background: rgba(0,0,0,0.5);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.dotHeadLine{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 30px;
+	color:#fff;
+	background: #BE0F0F;
+	font-size: 16px;
+}
+.dot a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.floatL:first-child{
+	margin-left:0;
+}
+.floatL:last-child{
+	margin-right:0;
+}
+.dot img{
+	width: 100%;
+	height: 100%;
+}
+.timeImg{
+	float: left;
+	width: 120px;
+	height: 75px;
+	margin:5px;
+}
+.dot .active{
+	border: #fff100 1px solid;
+}
+.floatL{
+	float: left;
+	width: 120px;
+	height: 75px;
+	margin:5px;
+}
+.timeBox{
+	float: left;
+	width: 120px;
+	height: 75px;
+	margin-left:5px;
+	margin-top:5px;
+	background: #bc141a;
+	color: #fff;
+	padding:0px 12px;
+}
+.timeBox p{
+	margin-bottom: 0;
+}
+.timeBox .month{
+	font-size: 22px;
+	line-height: 22px;
+}
+.timeBox .year{
+	font-size: 10px;
+	text-align: right;
+	line-height: 12px;
+}
+/*轮播图*/
+
+
+/*辅助类*/
+.carouselH{
+	height: 170px;
+}
+.carouselDot{
+	bottom: -1px;
+}
+.carouselDot li{
+	border-color: #bc141a;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.carouselDot .active{
+	background-color: #bc141a;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.relative{
+	position: relative;
+}
