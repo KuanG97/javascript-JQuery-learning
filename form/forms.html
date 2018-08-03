@@ -34,6 +34,8 @@
 	<input type="text" pattern="[0-9]*">
 	<p>js：</p>
 	<input type='text' onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();" />
+
+	<br>
 	<br>
 	<hr>
 
@@ -46,12 +48,16 @@
 	<h>评论内容:</h><br>
 	<textarea id="myArea" style="width: 100px;" cols="10"   rows="3" onKeyUp="keypress2()" onblur="keypress2()"></textarea>
 	<label id="pinglun">30</label><span>/</span><label>30</label>
+
+	<br>
 	<br>
 	<hr>
 
 <!-- 4 -->
 	<h2>回车提交</h2>
 	<input type="text" name="xxx" id="enterSubmit">
+
+	<br>
 	<br>
 	<hr>
 
@@ -59,6 +65,18 @@
 	<h2>密码强度实时验证</h2>
 	<input type="password" name="" id="pwdStren">
 	<div id="show"></div>
+
+	<br>
+	<br>
+	<hr>
+
+<!-- 6 -->
+	<h2>对文本内容进行关键词过滤</h2>
+	<textarea id="keyWordsFilter" rows="10" cols="50">
+		玫瑰花：”我并非如此的弱不禁风...夜晚的凉风对我倒有好处。我是一朵花啊。”
+	</textarea>
+
+	<br>
 	<br>
 	<hr>
 
@@ -69,5 +87,7 @@
 	<script type="text/javascript" src="enter.js"></script>
 	<!-- 5 -->
 	<script type="text/javascript" src="PasswordStrength.js"></script>
+	<!-- 6 -->
+	<script type="text/javascript" src="filterKeyWord.js"></script>
 </body>
 </html>
