@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<title></title>
+		<style>
+			*{
+		      padding: 0;
+			  margin: 0;}
+			form {
+				width: 570px;
+				height: 300px;
+				margin: 100px auto;
+			}
+			label{
+				width: 64px;
+				float: left;
+				 clear: left;
+				 height: 36px;
+				line-height: 36px;
+				margin-top: 10px;
+			     }
+			input {
+				width: 300px;
+				height: 36px;
+				line-height: 36px;
+				margin-top: 10px;
+				text-indent: 8px;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				border: 1px solid #ccc;
+				float: left;
+			}
+			#sub{
+				width: 302px;
+				height: 40px;
+				border: 1px solid #ccc;
+				background: #888;
+				color: #fff;
+				font-size: 18px;
+				text-indent: 0;
+				}
+			.note{
+				height: 36px;
+				line-height: 36px;
+				width: 204px;
+				display: inline-block;
+				float: left;
+				font-size: 12px;
+				color: #BD362F;
+				text-indent: 10px;
+				margin-top: 10px;
+				}
+		</style>
+	</head>
+
+	<body>
+		<form action="" method="post">
+			<label id="name">姓&nbsp;名：</label><input type="text" name="username" id="username" value="" placeholder="请输入姓名" /><noten class="note note1"></noten><br />
+			<label id="phone">手机号：</label><input type="text" name="userphone" id="userphone" value="" placeholder="请输入手机号" /><noten class="note note2"></noten><br />
+			<label id="address">地&nbsp;址：</label><input type="text" name="useraddress" id="useraddress" value="" placeholder="请输入地址" /><noten class="note note3"></noten><br />
+			<label>&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="submit" value="注册" id="sub" />
+		</form>
+		<script src="../jquery.min.js"></script>
+		<script src="login.js"></script>
+	</body>
+
+</html>
