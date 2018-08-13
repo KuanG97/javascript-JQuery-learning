@@ -1,0 +1,65 @@
+html {
+  background: red;
+}
+/* 该注释会被编译 */
+/*变量例子出现的内容*/
+body {
+  width: 300px;
+  height: 280px;
+  background: #0000ff;
+}
+/*混合例子出现的内容*/
+.border {
+  border: 5px solid yellow;
+}
+body {
+  border: 5px solid yellow;
+}
+/*混合还可带参数例子出现的内容*/
+body {
+  border: solid 10px #000000;
+}
+/*混合可带参数,默认值的例子出现的内容*/
+.testborder_03 {
+  border: solid 10px '#3399ff';
+}
+/*匹配模式例子出现的内容*/
+.sangjiao {
+  border-width: 5px;
+  border-color: #cccccc transparent transparent transparent;
+  border-style: solid dashed dashed dashed;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+/*嵌套例子出现的内容*/
+.list {
+  width: 600px;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+}
+.list li {
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+.list a {
+  float: left;
+}
+.list a:hover {
+  color: yellow;
+}
+.list span {
+  float: right;
+}
+/*@arguments变量*/
+.testarguments {
+  border: 30px #ff0000 solid;
+}
+/*避免编译:避免编译自动计算了值*/
+.test3 {
+  width: calc(300px-30px);
+}
+/*!important类似日常的加法*/
